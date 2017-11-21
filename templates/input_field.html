@@ -1,0 +1,10 @@
+{% extends "main.html" %} {% block head %} {{ super() }} {% endblock %} {% block content %}
+
+<div class="form">
+<form action="{{url_for('inputUrl')}}" method = 'POST'>
+<p>Enter Url:</p>
+<input type='text' size='2083' name='destination'>
+<input id="submit-btn"  class="waves-effect waves-light btn" type='submit' value='Submit'>
+</form>
+</div>
+{% endblock %}
